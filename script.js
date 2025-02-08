@@ -7,7 +7,7 @@
             appendLoading();
 
             try {
-                const response = await axios.post('http://localhost:5000/chat', { message: userInput });
+                const response = await axios.post('https://3db5-110-54-182-102.ngrok-free.app/chat', { message: userInput });
                 removeLoading();
                 appendMessage('Lijit AI', response.data.reply, 'ai-message');
                 hljs.highlightAll();
